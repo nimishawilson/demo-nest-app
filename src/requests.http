@@ -1,0 +1,13 @@
+### Add students
+
+POST http://localhost:3000/students
+content-type: application/json
+
+{
+    "name": "James",
+    "registrationNo": "CT88KO"
+}
+
+### Get All students
+GET http://localhost:3000/students
+
