@@ -4,10 +4,21 @@ POST http://localhost:3000/students
 content-type: application/json
 
 {
-    "name": "James",
-    "registrationNo": "CT88KO"
+    "name": "Mathew",
+    "registrationNo": "CT98KA"
 }
 
 ### Get All students
 GET http://localhost:3000/students
 
+
+### Add course
+POST http://localhost:3000/courses
+content-type: application/json
+
+{
+    "name": "Data Science"
+}
+
+### Get All courses
+GET http://localhost:3000/courses
