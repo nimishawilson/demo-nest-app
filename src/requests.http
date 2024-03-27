@@ -1,5 +1,4 @@
 ### Add students
-
 POST http://localhost:3000/students
 content-type: application/json
 
@@ -22,3 +21,23 @@ content-type: application/json
 
 ### Get All courses
 GET http://localhost:3000/courses
+
+
+### Enroll multiple courses to a student
+POST http://localhost:3000/enrollment/2/courses
+content-type: application/json
+
+[
+  {
+    "course": { "id": 2, "name": "ML"},
+    "levelId": 1
+  },
+  {
+    "course": { "id": 3, "name": "Data Science"},
+    "levelId": 2
+  },
+  {
+    "course": { "id": 2, "name": "ML"},
+    "levelId": 1
+  }
+]
